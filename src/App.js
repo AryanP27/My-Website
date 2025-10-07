@@ -31,8 +31,12 @@ function App() {
       <section className="section about" id="about">
         <h2>About Me</h2>
         <p>
-          I’m passionate about building software, learning new technologies,
-          and creating projects that solve real problems.
+          Junior at the University of Akron majoring in Computer Science and a minor in Business Administration.
+          I am a very outgoing person who has experience with multiple roles and positions. </p>
+        <p>
+          I enjoy working with different people and trying out new ideas whether it be in business, my school environment, or even in the gym! 
+          I love to learn and am working on a few different projects right to build my skills in the Software Development space. 
+          I have worked with multiple languages such as C++, JavaScript, HTML/CSS and Python.
         </p>
       </section>
 

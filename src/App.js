@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { HiArrowDownCircle } from "react-icons/hi2";
+
 
 function App() {
   // Scroll helper
@@ -25,7 +27,12 @@ function App() {
       <header className="section home" id="home">
         <h1>Welcome</h1>
         <p>Hello! I’m Aryan, a Computer Science student and software engineer.</p>
+        <h2 className="tagline">CS Student | Data Science Enthusiast | Aspiring Software Engineer</h2>
+        <button className="icon-button">
+          <HiArrowDownCircle size={60} />
+        </button>
       </header>
+
 
       {/* About Me */}
       <section className="section about" id="about">
@@ -34,9 +41,13 @@ function App() {
           Junior at the University of Akron majoring in Computer Science and a minor in Business Administration.
           I am a very outgoing person who has experience with multiple roles and positions. </p>
         <p>
-          I enjoy working with different people and trying out new ideas whether it be in business, my school environment, or even in the gym! 
-          I love to learn and am working on a few different projects right to build my skills in the Software Development space. 
+          I enjoy working with different people and trying out new ideas whether it be in business, my school environment, or even in the gym!
+          I love to learn and am working on a few different projects right to build my skills in the Software Development space.
           I have worked with multiple languages such as C++, JavaScript, HTML/CSS and Python.
+        </p>
+
+        <p>
+          In my free time, I enjoy going to the gym, cooking food, and hanging out with friends and family. I also love volunteering and giving back to my community.
         </p>
       </section>
 

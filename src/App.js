@@ -28,7 +28,7 @@ function App() {
         <h1>Welcome</h1>
         <p>Hello! I’m Aryan, a Computer Science student and software engineer.</p>
         <h2 className="tagline">CS Student | Data Science Enthusiast | Aspiring Software Engineer</h2>
-        <button className="icon-button">
+        <button className="icon-button" onClick={() => scrollToSection('about')}>
           <HiArrowDownCircle size={60} />
         </button>
       </header>
@@ -49,6 +49,9 @@ function App() {
         <p>
           In my free time, I enjoy going to the gym, cooking food, and hanging out with friends and family. I also love volunteering and giving back to my community.
         </p>
+        <button className="icon-button" onClick={() => scrollToSection('work')}>
+          <HiArrowDownCircle size={60} />
+        </button>
       </section>
 
       {/* Work History */}
@@ -72,6 +75,9 @@ function App() {
             <li>Built and deployed automated email campaign systems that eliminated over 20 hours of manual work weekly, enhancing team productivity and consistency in client communication</li>
           </ul>
         </div>
+        <button className="icon-button" onClick={() => scrollToSection('projects')}>
+          <HiArrowDownCircle size={60} />
+        </button>
       </section>
 
       {/* Projects */}

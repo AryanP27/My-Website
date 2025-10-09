@@ -28,6 +28,9 @@ function App() {
         <h1>Welcome</h1>
         <p>Hello! I’m Aryan, a Computer Science student and software engineer.</p>
         <h2 className="tagline">CS Student | Data Science Enthusiast | Aspiring Software Engineer</h2>
+        <div className="image">
+          <img src="/Home.jpg" alt="Aryan" />
+        </div>
         <button className="icon-button" onClick={() => scrollToSection('about')}>
           <HiArrowDownCircle size={60} />
         </button>

@@ -24,7 +24,7 @@ function App() {
           <div className="home-text">
             <h1>Welcome</h1>
             <p>Hello! I’m Aryan, a Computer Science student and software engineer.</p>
-            <h2 className="tagline">CS Student | Data Science Enthusiast | Aspiring Software Engineer</h2>
+            <h2 className="tagline">CS Student | Aspiring Software Engineer</h2>
           </div>
           <div className="home-image">
             <img src="/My-Website/Home.jpg" alt="Aryan" />

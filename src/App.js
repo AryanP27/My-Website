@@ -15,6 +15,7 @@ function App() {
         <button onClick={() => scrollToSection('about')}>About Me</button>
         <button onClick={() => scrollToSection('work')}>Work History</button>
         <button onClick={() => scrollToSection('projects')}>Projects</button>
+        <button onClick={() => scrollToSection('skills')}>Skills</button>
         <button onClick={() => scrollToSection('contact')}>Contact</button>
       </nav>
 
@@ -105,36 +106,111 @@ function App() {
       </section>
 
       <section className="projects-section" id="projects">
-  <h2>Projects</h2>
-  <div className="project-cards">
-    <div className="project-card">
-      <h3>UA NASA Robotics Team | Software Developer</h3>
-      <p>August 2024 – Present</p>
-      <ul>
-        <li>Contribute to the UA NASA Robotics Team in developing a robot for the NASA Lunabotics competition.</li>
-        <li>Programmed in C++, Python, and ROS to work with Arduino microcontrollers enabling autonomous movement and task execution.</li>
-        <li>Developed multiple Python packages to handle robotic tasks and track movement.</li>
-      </ul>
-    </div>
-    <div className="project-card">
-      <h3>Crypto Trading Bot – Mean Reversion Strategy </h3>
-      <p>January 2025 – May 2025</p>
-      <ul>
-        <li>Built a trading bot in Python using CCXT to simulate trades on Kraken, applying Bollinger Bands for buy/sell signals.</li>
-        <li>Designed a modular architecture with separate files for bot logic, utility functions, and backtesting.</li>
-        <li>Implemented a backtesting framework with historical OHLCV data and visualized performance using Matplotlib.</li>
-        <li>Practiced risk management by simulating trade sizing, balance tracking, and profit multipliers.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <h2>Projects</h2>
+        <div className="project-cards">
+          <div className="project-card">
+            <h3>UA NASA Robotics Team | Software Developer</h3>
+            <p>August 2024 – Present</p>
+            <ul>
+              <li>Contribute to the UA NASA Robotics Team in developing a robot for the NASA Lunabotics competition.</li>
+              <li>Programmed in C++, Python, and ROS to work with Arduino microcontrollers enabling autonomous movement and task execution.</li>
+              <li>Developed multiple Python packages to handle robotic tasks and track movement.</li>
+            </ul>
+          </div>
+
+          <div className="project-card">
+            <h3>Crypto Trading Bot – Mean Reversion Strategy </h3>
+            <ul>
+              <li>Built a trading bot in Python using CCXT to simulate trades on Kraken, applying Bollinger Bands for buy/sell signals.</li>
+              <li>Designed a modular architecture with separate files for bot logic, utility functions, and backtesting.</li>
+              <li>Implemented a backtesting framework with historical OHLCV data and visualized performance using Matplotlib.</li>
+              <li>Practiced risk management by simulating trade sizing, balance tracking, and profit multipliers.</li>
+            </ul>
+            <a href="https://github.com/AryanP27/Mean-Reversion-Bot" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>Currency Converter – C++ Finance Project</h3>
+            <ul>
+              <li>Built a C++ program that fetches real-time exchange rates from ExchangeRate-API.</li>
+              <li>Uses <code>libcurl</code> to make HTTP requests and parses JSON responses.</li>
+              <li>Allows users to view available currencies and convert between supported currency pairs.</li>
+              <li>Provides a simple command-line interface with accurate market rates.</li>
+            </ul>
+            <a href="https://github.com/AryanP27/Currency-Converter" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>Stock Price Analyzer – Python Finance Project</h3>
+            <ul>
+              <li>Developed a Python bot that analyzes stock prices using RSI (Relative Strength Index).</li>
+              <li><code>fetch_data.py</code> retrieves data from Yahoo Finance via yfinance and stores it in CSV files.</li>
+              <li><code>SPA.py</code> processes the CSV data and generates visual models for closing price, volume, and RSI.</li>
+              <li>Helps users identify overbought/oversold conditions to make informed trading decisions.</li>
+            </ul>
+            <a href="https://github.com/AryanP27/Stock-Price-Analyzer" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </div>
+
+          <div className="project-card">
+            <h3>A* AI Heuristic Search Project</h3>
+            <p>
+              This project implements and visualizes <strong>A*</strong> search on a grid-based maze,
+              comparing its performance against <strong>BFS</strong> for large-scale mazes (up to 1000×1000).
+            </p>
+            <ul>
+              <li>Generates random maze with start and goal</li>
+              <li>Implements BFS and A* using a Manhattan heuristic</li>
+              <li>Visualized with Matplotlib for side-by-side comparison</li>
+              <li>A* ≈ 1s vs BFS ≈ 6s on 1000×1000 maze</li>
+            </ul>
+            <a href="https://github.com/AryanP27/A-Star-Path-AI-Project" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </div>
+
+        </div>
+        <button className="icon-button" onClick={() => scrollToSection('skills')}>
+          <HiArrowDownCircle size={60} />
+        </button>
+
+      </section>
+
+      <section className="skills-section" id="skills">
+        <h2>Skills</h2>
+        <div className="skills-cards">
+          <div className="skill-card">JavaScript</div>
+          <div className="skill-card">C++</div>
+          <div className="skill-card">Python</div>
+          <div className="skill-card">SQL</div>
+          <div className="skill-card">HTML/CSS</div>
+          <div className="skill-card">React</div>
+          <div className="skill-card">Node.js</div>
+          <div className="skill-card">FastAPI</div>
+          <div className="skill-card">AWS Amplify</div>
+          <div className="skill-card">Docker</div>
+          <div className="skill-card">Git</div>
+          <div className="skill-card">Jira</div>
+          <div className="skill-card">Azure DevOps</div>
+        </div>
+      </section>
 
       <section className="contact-section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: apai232705@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aryanp27/">Aryan P</a></p>
-        <p>GitHub: <a href=""></a></p>
+        <div className="contact-card">
+          <h2>Let's Connect</h2>
+          <div className="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:apai232705@gmail.com">apai232705@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aryanp27/">Aryan P</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/AryanP27">AryanP27</a></p>
+          </div>
+        </div>
       </section>
+
     </div>
   );
 }
